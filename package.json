@@ -1,0 +1,20 @@
+{
+  "name": "space-x",
+  "version": "1.0.0",
+  "description": "Miniweb template responsive | script de hamburguer menu | conceptos display flex",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./css/estilos.scss ./css/estilos.css"
+  },
+  "keywords": [
+    "javascript",
+    "SASS",
+    "responsive",
+    "HTML"
+  ],
+  "author": "@pbyjo on github | byjo.developer@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.13"
+  }
+}

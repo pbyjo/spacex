@@ -1,0 +1,183 @@
+@media screen and(max-width: 1199px) {
+    h1 strong {
+        color: #e6ebf0;
+      }
+    .hero {
+        position: relative;
+        overflow: hidden; /* Evita el desbordamiento de la imagen */
+        padding: 15vw 0;
+        &__title {
+            color: skyblue;
+            text-align: left;
+            padding: 0 8px 0 50px ;
+            background-color: rgba(0,0,0,.2);
+            z-index: 2;
+        }
+        &__image{
+            position: absolute;
+            z-index: 1;
+            max-width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          }
+    }
+
+}
+
+@media screen and(max-width: 554px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        &__logo {
+            display: inherit;
+            margin: 0 0 20px 0;
+            & > img {
+              min-width: 80px;
+              max-width: 140px;
+            }
+          }
+        &__menu {
+            display: inherit;
+            letter-spacing: 2px;
+            padding: 0;
+            & > ol {
+                
+                & > li {
+
+                    & > a {
+                   
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and(max-width: 480px) {
+    .burger__button {
+        display: block;
+    }
+    .header {
+        &__menu {
+            padding: 0;
+            position: fixed;
+            background-color: whitesmoke;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: -100vw;
+            z-index: 9;
+            opacity: .7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: .5s;
+            & > ol {
+                display: initial;
+                & > li {
+                    margin-bottom: 25px;
+                    & > a {
+                        color: black;   
+                        font-size: 1.5rem;                    
+                    }
+                    & > a:hover {
+                        color: skyblue;
+                        text-decoration: underline;
+                    } 
+                }
+            }
+        }
+        &__menu.is-active {
+            left: 0;
+            transition: .5s;
+        }
+    }
+    .hero {
+        &__title {
+            font-size: 2.4rem;
+            padding: 0 8px 0 20px ;
+            background-color: rgba(0,0,0,.2);
+        }
+    }
+
+}
+
+@media screen and(max-width: 439px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        &__logo {
+            display: inherit;
+            padding: 0;
+            margin: 0 0 20px 0;
+            & > img {
+                max-width: 120px;
+            }
+          }
+        &__menu {
+            display: inherit;
+            letter-spacing: 2px;
+            padding: 0;
+            & > ol {
+                
+                & > li {
+
+                    & > a {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .hero {
+        padding: 10vw 0;
+        &__title {
+            font-size: 2rem;
+            padding: 0 8px 0 20px ;
+            background-color: rgba(0,0,0,.2);
+        }
+    }
+
+}
+@media screen and(max-width: 333px) {
+    .header {
+        &__menu {
+            
+            & > ol {
+                
+                & > li {
+
+                    & > a {
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 320px) {
+    .header {
+        &__logo {
+            display: inherit;
+            padding: 5px 0 0 0 ;
+            margin: 0 0 10px 0;
+            & > img {
+                max-width: 120px;
+                display: flex;
+            }
+        }
+    }
+    .hero {
+        &__title {
+            font-size: 2rem;
+        }
+    }
+
+}

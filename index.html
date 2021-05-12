@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>Space X</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+  </head>
+
+  <body>
+
+    <i class="icon-menu burger__button" id="burger-menu"></i>
+
+    <header class="header">
+
+      <div class="container">
+
+        <figure class="header__logo">
+          <img src="./images/logo.png" height="50" alt="Logo de http://spacex.com" />
+        </figure>
+
+        <nav class="header__menu">
+          <ol>
+            <li>
+              <a class="link" href="#portafolio">Falcon 9</a>
+            </li>
+            <li>
+              <a class="link" href="#eventos">Falcon Heavy</a>
+            </li>
+            <li>
+              <a class="link" href="#contacto">Dragon</a>
+            </li>
+            <li>
+              <a class="link" href="#contacto">Starship</a>
+            </li>
+          </ol>
+        </nav>
+
+      </div>
+
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">
+          Recent Launch <br />
+          <strong> Starlink Mission </strong>
+        </h1>
+        <img class="hero__image" src="./images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
+      </div>
+    </section>
+
+    <script>       
+      const menu = document.querySelector('.header__menu')
+      console.log(menu);
+      const burgerbutton = document.querySelector('#burger-menu')
+      console.log(burgerbutton);
+
+      function showHide() {
+          if(menu.classList.contains('is-active')) {
+              menu.classList.remove('is-active')
+          } else {
+              menu.classList.add('is-active')
+          }
+      }
+
+      burgerbutton.addEventListener('click', showHide)    
+    </script>   
+
+      <section class="video">
+
+          <video class="video__s" src="./videos/spacex-video.mp4" controls autoplay loop>
+              
+          </video>
+
+      </section>
+
+  </body>
+
+</html>
